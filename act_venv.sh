@@ -24,9 +24,9 @@ if [ $option -ne 0 ]; then
     VENV_PATH_ACT="$VENV_PATH/${VENV_OP[$option]}"
     echo "The option $option is activated: $VENV_PATH_ACT"
     echo $VENV_PATH_ACT > ~/.VENV_PATH_ACT
-    echo "Active VirtualEnv with the command: <activar_venv>"
+    echo "Active VirtualEnv with the command: <active_venv>"
 fi
-if [ $1 = '-x' ]; then
-    xdotool type "activar_venv"
+if [ "$1" = "-x" ]; then
+    xdotool type "active_venv"
 fi
 exit 0
